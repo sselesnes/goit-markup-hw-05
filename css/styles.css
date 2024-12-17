@@ -514,3 +514,142 @@ section {
 .ft-icon-ellipse:focus {
   background-color: #31d0aa;
 }
+
+.modal-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #fcfcfc;
+  max-width: 408px;
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
+  border-radius: 4px;
+  position: absolute;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  width: 100%;
+  padding: 0px;
+  border: none;
+}
+
+.form-close-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid #0000001a;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  padding: 0;
+}
+
+.form-icon-close {
+  fill: #2a2a2a;
+}
+
+.modal-title {
+  margin: 0;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.modal-text {
+  padding: 8px;
+  margin: 0;
+  min-width: 200px;
+  background-color: #777;
+  border: 1px solid #f0f;
+}
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -4px;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.label-text {
+  margin-bottom: 4px;
+}
+
+.form-input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+
+  padding-left: 38px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+
+  min-height: 40px;
+  width: 100%;
+
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  /* position: relative; */
+}
+
+.form-icon {
+  padding: 0;
+  margin: 0;
+  translate: 16px -25px;
+  /* top: 50%;
+  transform: translateY(-50%); */
+}
+
+.submit-button {
+  display: inline-flex;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
+}
