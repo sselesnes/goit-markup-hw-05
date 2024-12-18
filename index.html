@@ -498,50 +498,60 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="form">
-          <div class="form-input-group">
+          <div class="form-input-field">
             <label class="form-label" for="name">Name</label>
-            <input class="form-input" type="text" name="name" />
-            <svg width="12" height="12" class="form-icon">
+            <input class="form-input" type="text" name="name" id="name" />
+            <svg class="form-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
 
-          <div class="form-input-group">
-            <label class="form-label" for="email">Phone</label>
-            <input class="form-input" type="email" name="email" />
-            <svg width="13" height="12" class="form-icon">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-          </div>
-
-          <div class="form-input-group">
-            <label class="form-label" for="phone">E-mail</label>
-            <input class="form-input" type="tel" name="phone" />
-            <svg width="16" height="12" class="form-icon">
+          <div class="form-input-field">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-input" type="tel" name="phone" id="phone" />
+            <svg class="form-icon" width="13" height="13">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
 
-          <div class="form-input-group">
+          <div class="form-input-field">
+            <label class="form-label" for="email">E-mail</label>
+            <input class="form-input" type="email" name="email" id="email" />
+            <svg class="form-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+
+          <div class="form-input-field">
             <label class="form-label" for="cmmt">Comment</label>
             <textarea
               class="form-textarea"
               name="cmnt"
+              id="cmnt"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <div class="form-agree">
-            <label class="form-checkbox-label" for="agree"
-              >I accept the terms and conditions of the
-              <span class="form-checkbox-privacy">Privacy Policy</span></label
-            >
+          <div class="form-agree-field">
             <input
+              class="form-checkbox visually-hidden"
               type="checkbox"
-              class="form-checkbox-button visually-hidden"
               name="agree"
+              id="agree"
+              value="true"
+              checked
               required
             />
+
+            <label class="form-agree-label" for="agree">
+              <span class="form-agree-svg-span">
+                <svg class="form-agree-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="form-privacy">Privacy Policy</a></label
+            >
           </div>
 
           <button class="submit-button" type="submit">Send</button>
