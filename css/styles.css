@@ -44,6 +44,19 @@ section {
   padding-bottom: 120px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* -----header----- */
 .page-header-top {
   border-bottom: 1px solid #e7e9fc;
@@ -223,20 +236,6 @@ section {
 }
 
 /* -----section 2----- */
-
-.benefit-title-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .benefit-item-list {
   display: flex;
   margin-bottom: 0;
@@ -622,7 +621,7 @@ section {
   font-family: inherit;
 
   padding-left: 38px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
   min-height: 40px;
@@ -643,13 +642,59 @@ section {
   transform: translateY(-50%); */
 }
 
+.form-textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  outline: transparent;
+  padding: 8px 16px;
+}
+
+.form-agree {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.form-checkbox-label {
+}
+
+.form-checkbox-button {
+}
+
 .submit-button {
-  display: inline-flex;
-  padding: 12px 32px;
   border: none;
   border-radius: 4px;
-  background-color: #2196f3;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
   color: #fff;
-  font-size: inherit;
   cursor: pointer;
+
+  display: block;
+  margin-top: ;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
 }

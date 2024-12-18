@@ -64,7 +64,7 @@
       <!-- section 2 -->
       <section class="benefit-list-section">
         <div class="container">
-          <h2 class="benefit-title-hidden">Why we are better than others</h2>
+          <h2 class="visually-hidden">Why we are better than others</h2>
           <ul class="benefit-item-list">
             <li class="benefit-item">
               <div class="benefit-icon-card">
@@ -515,14 +515,35 @@
           </div>
 
           <div class="form-input-group">
-            <label class="form-label" for="email">E-mail</label>
-            <input class="form-input" type="email" name="email" />
+            <label class="form-label" for="phone">E-mail</label>
+            <input class="form-input" type="tel" name="phone" />
             <svg width="16" height="12" class="form-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
 
-          <button class="submit-button" type="submit">Submit</button>
+          <div class="form-input-group">
+            <label class="form-label" for="cmmt">Comment</label>
+            <textarea
+              class="form-textarea"
+              name="cmnt"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="form-agree">
+            <label class="form-checkbox-label" for="agree"
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
+            <input
+              type="checkbox"
+              class="form-checkbox-button visually-hidden"
+              name="agree"
+              required
+            />
+          </div>
+
+          <button class="submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
