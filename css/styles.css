@@ -675,6 +675,13 @@ section {
 .form-checkbox-button {
 }
 
+.form-checkbox-privacy {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
 .submit-button {
   border: none;
   border-radius: 4px;
