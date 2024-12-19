@@ -501,50 +501,53 @@
         <form class="form">
           <div class="form-input-field">
             <label class="form-label" for="user-name">Name</label>
-            <input class="form-input" type="text" name="name" id="user-name" />
-            <svg class="form-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+            <div class="form-input-wrap">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-input-field">
             <label class="form-label" for="phone">Phone</label>
-            <input class="form-input" type="tel" name="phone" id="phone" />
-            <svg class="form-icon" width="13" height="13">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+            <div class="form-input-wrap">
+              <input class="form-input" type="tel" name="phone" id="phone" />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-input-field">
             <label class="form-label" for="email">E-mail</label>
-            <input class="form-input" type="email" name="email" id="email" />
-            <svg class="form-icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
+            <div class="form-input-wrap">
+              <input class="form-input" type="email" name="email" id="email" />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-input-field">
             <label class="form-label" for="cmnt">Comment</label>
-            <textarea
-              class="form-textarea"
-              name="cmnt"
-              id="cmnt"
-              placeholder="Text input"
-            ></textarea>
+            <div class="form-input-wrap">
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
 
           <div class="form-agree-field">
-            <input
-              class="form-checkbox visually-hidden"
-              type="checkbox"
-              name="agree"
-              id="agree"
-              value="true"
-              checked
-              required
-            />
-
-            <label class="form-agree-label" for="agree">
+            <label class="form-agree-label" for="user-privacy">
               <span class="form-agree-svg-span">
                 <svg class="form-agree-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
@@ -553,6 +556,15 @@
               I accept the terms and conditions of the
               <a href="" class="form-privacy">Privacy Policy</a></label
             >
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              checked
+              required
+            />
           </div>
 
           <button class="submit-button" type="submit">Send</button>
