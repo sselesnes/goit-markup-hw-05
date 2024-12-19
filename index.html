@@ -535,7 +535,7 @@
           </div>
 
           <div class="form-input-field">
-            <label class="form-label" for="cmnt">Comment</label>
+            <label class="form-label" for="user-comment">Comment</label>
             <div class="form-input-wrap">
               <textarea
                 class="form-textarea"
@@ -547,6 +547,16 @@
           </div>
 
           <div class="form-agree-field">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              checked
+              required
+            />
+
             <label class="form-agree-label" for="user-privacy">
               <span class="form-agree-svg-span">
                 <svg class="form-agree-icon" width="10" height="8">
@@ -556,15 +566,6 @@
               I accept the terms and conditions of the
               <a href="" class="form-privacy">Privacy Policy</a></label
             >
-            <input
-              class="form-checkbox visually-hidden"
-              type="checkbox"
-              name="user-privacy"
-              id="user-privacy"
-              value="true"
-              checked
-              required
-            />
           </div>
 
           <button class="submit-button" type="submit">Send</button>
