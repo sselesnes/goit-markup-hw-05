@@ -539,13 +539,12 @@ section {
 .footer-subscribe-input {
   width: 264px;
   height: 40px;
-  font-family: 'Roboto', sans-serif;
+  padding-left: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
   color: #fff;
-  padding-left: 16px;
   font-family: inherit;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -558,13 +557,27 @@ section {
 }
 
 .footer-subscribe-button {
-  border-radius: 4px;
-  border: none;
-  padding: 8px 24px;
   width: 165px;
   height: 40px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: none;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+}
+.subscribe-svg-span {
+  margin-left: 16px;
+  fill: #fff;
 }
 
 /* ----- modal ------ */
