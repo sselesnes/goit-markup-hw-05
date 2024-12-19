@@ -496,6 +496,7 @@ section {
   width: 264px;
   font-weight: 500;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -507,6 +508,8 @@ section {
 .ft-icons {
   display: flex;
   gap: 16px;
+  width: 208px;
+  margin-right: 80px;
 }
 
 .ft-icon-ellipse:hover,
@@ -514,6 +517,57 @@ section {
   background-color: #31d0aa;
 }
 
+.footer-subscribe-text {
+  display: flex;
+  width: 264px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-subscribe-label {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+  font-family: inherit;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-subscribe-input::placeholder {
+  color: #fff;
+}
+
+.footer-subscribe-button {
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  color: #fff;
+  background: #4d5ae5;
+}
+
+/* ----- modal ------ */
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
