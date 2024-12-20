@@ -790,6 +790,7 @@ section {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 .form-agree-span {
   display: inline-flex;
   align-items: center;
@@ -808,7 +809,10 @@ section {
 }
 
 /* .form-agree-field */
-input[type='checkbox']:checked + .form-agree-label .form-agree-span {
+/* 
+input[type='checkbox']:checked + .form-agree-label .form-agree-span { */
+
+.form-agree-checkbox:checked + .form-agree-label .form-agree-span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
