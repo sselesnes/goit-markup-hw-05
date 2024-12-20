@@ -35,6 +35,7 @@ img {
 
 .container {
   width: 1158px;
+
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -575,7 +576,7 @@ section {
   text-align: center;
   cursor: pointer;
 }
-.subscribe-svg-span {
+.subscribe-icon {
   margin-left: 16px;
   fill: #fff;
 }
