@@ -772,12 +772,6 @@ section {
 }
 
 .form-agree-field {
-  /* font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99; */
-  /* margin-top: 16px; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -807,10 +801,6 @@ section {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .form-agree-field */
-/* 
-input[type='checkbox']:checked + .form-agree-label .form-agree-span { */
 
 .form-agree-checkbox:checked + .form-agree-label .form-agree-span {
   background-color: #404bbf;
