@@ -558,7 +558,7 @@ section {
 }
 
 .footer-subscribe-button {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
@@ -790,7 +790,7 @@ section {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.form-agree-svg-span {
+.form-agree-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -808,7 +808,7 @@ section {
 }
 
 /* .form-agree-field */
-input[type='checkbox']:checked + .form-agree-label .form-agree-svg-span {
+input[type='checkbox']:checked + .form-agree-label .form-agree-span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
